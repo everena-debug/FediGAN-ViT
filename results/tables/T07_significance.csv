@@ -1,0 +1,9 @@
+key,configuration,n_pairs,delta_f1_macro_pp,paired_t_p,wilcoxon_p,mcnemar_seed,proposed_only_correct,other_only_correct,mcnemar_p,paired_t_p_holm,wilcoxon_p_holm,mcnemar_p_holm
+fedavg_gan,FedAvg + cGAN + ViT,1,1.2334324499953309,,,42.0,10.0,3.0,0.09228515625,,,0.46142578125
+fedprox_none,FedProx + ViT (no augmentation),3,1.4525844945454724,0.1925533033615541,0.5,42.0,22.0,10.0,0.050102459732443094,0.3851066067231082,1.0,0.30061475839465857
+fedprox_oversample,FedProx + ViT + random oversampling (same counts as cGAN),3,0.12101374400856531,0.5612217029694448,0.75,42.0,14.0,12.0,0.8450189828872681,0.5612217029694448,1.0,1.0
+local_gan,"Local-only ViT + cGAN (no collaboration, mean of clients)",3,10.134560232201954,0.031195375421569225,0.25,,,,,0.1247815016862769,1.0,
+central_none,"Centralised ViT (pooled data, upper bound)",3,-1.1034277111483637,0.061780914236346005,0.25,42.0,10.0,13.0,0.6776394844055176,0.185342742709038,1.0,1.0
+fedprox_gan_resnet50,FedProx + cGAN + ResNet-50,1,4.243660947120365,,,42.0,39.0,15.0,0.0014962588853935084,,,0.010473812197754558
+partial,Partial participation (p=0.67),1,0.4736134468291464,,,42.0,12.0,9.0,0.6636238098144531,,,1.0
+loco_c0,Leave client 0 out (unseen institution),1,0.7982734358870314,,,42.0,19.0,14.0,0.48685024166479707,,,1.0

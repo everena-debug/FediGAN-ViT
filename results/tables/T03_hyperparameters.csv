@@ -1,0 +1,15 @@
+Setting,Value
+Dataset,"Eye Diseases Classification (Kaggle), 4 classes"
+Images used (after de-dup),4213
+Split,"patient/near-duplicate-grouped, stratified: train 3069 / val 570 / test 574"
+Preprocessing,"black-border crop, resize 224, illumination correction, NLM denoising, CLAHE (L channel), FOV mask"
+Clients / partition,"3 clients, patient-grouped Dirichlet α=0.5, each ≥10% of data"
+Classifier,"vit_small_patch16_224 (timm, pretrained=True), head dropout 0.3"
+Loss,"class-balanced focal loss (β=0.9999, γ=2.0) with client-local class counts"
+Optimiser,"AdamW, lr {'vit': 0.0001, 'cnn': 0.0003}, weight decay 0.05, cosine decay over rounds, grad-clip 1.0, AMP fp16"
+Batch size,32 (DataParallel over 2 GPUs)
+Federated rounds / local epochs,max 15 / 1; early stopping on val macro-AUC (patience 4)
+Aggregation,FedAvg weighted by real-sample count; FedProx μ=0.01
+cGAN,"64×64, latent 100, 100 epochs, batch 32, Adam 0.0002 (β1=0.5), label smoothing 0.9"
+Synthetic per class per client,"min(gap to majority class, 100); upsampled 64→224 bicubic; never re-preprocessed"
+Seeds,"proposed [42, 43, 44]; others [42, 43, 44]"

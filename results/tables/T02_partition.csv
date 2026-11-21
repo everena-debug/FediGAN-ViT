@@ -1,0 +1,13 @@
+alpha,client,cls,real,synthetic,after,few_shot_flag
+0.5,0,Cataract,584,0,584,False
+0.5,0,DR,106,100,206,False
+0.5,0,Glaucoma,53,100,153,False
+0.5,0,Normal,519,65,584,False
+0.5,1,Cataract,116,100,216,False
+0.5,1,DR,690,0,690,False
+0.5,1,Glaucoma,398,100,498,False
+0.5,1,Normal,219,100,319,False
+0.5,2,Cataract,50,100,150,False
+0.5,2,DR,18,100,118,True
+0.5,2,Glaucoma,263,0,263,False
+0.5,2,Normal,53,100,153,False

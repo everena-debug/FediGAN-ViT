@@ -1,0 +1,9 @@
+Comparison,Seed 42 (ours / other),Seed 43 (ours / other),Seed 44 (ours / other),Mean delta (points),95% CI over seeds,Paired bootstrap 95% CI
+No augmentation,93.00 / 90.93,92.53 / 90.20,91.79 / 91.83,+1.45,"[-1.78, +4.68]","[+0.41, +2.49]"
+Random oversampling,93.00 / 92.59,92.53 / 92.39,91.79 / 91.98,+0.12,"[-0.63, +0.88]","[-0.91, +1.11]"
+Centralised ViT,93.00 / 93.57,92.53 / 93.72,91.79 / 93.34,-1.10,"[-2.34, +0.13]","[-2.39, +0.14]"
+Local-only ViT + cGAN,93.00 / 79.23,92.53 / 83.81,91.79 / 83.88,+10.13,"[+2.25, +18.02]","[+8.54, +11.63]"
+Partial participation,93.00 / 92.53,-,-,+0.47,-,-
+Leave client 0 out,93.00 / 92.20,-,-,+0.80,-,-
+FedAvg + ViT + cGAN,93.00 / 91.77,-,-,+1.23,-,-
+FedProx + ResNet-50 + cGAN,93.00 / 88.76,-,-,+4.24,-,-

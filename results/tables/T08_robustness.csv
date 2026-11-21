@@ -1,0 +1,4 @@
+configuration,n_seeds,test_accuracy,test_f1_macro,test_auc_macro,unseen_client_accuracy,unseen_client_balanced_accuracy,unseen_client_f1_macro,unseen_client_auc_macro
+FediGAN-ViT (FedProx + cGAN + ViT),3,92.45 ± 0.61,92.44 ± 0.61,98.95 ± 0.08,,,,
+Partial participation (p=0.67),1,92.51,92.53,99.15,,,,
+Leave client 0 out (unseen institution),1,92.16,92.20,98.83,89.86,89.39,82.14,98.31

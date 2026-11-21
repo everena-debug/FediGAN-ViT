@@ -1,0 +1,6 @@
+Class,Images (raw),After de-dup,Train,Val,Test
+Cataract,1038,1036,750,151,135
+DR,1098,1098,814,132,152
+Glaucoma,1007,1005,714,144,147
+Normal,1074,1074,791,143,140
+Total,4217,4213,3069,570,574

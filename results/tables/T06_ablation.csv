@@ -1,0 +1,8 @@
+key,configuration,n_seeds,accuracy,balanced_accuracy,precision_macro,recall_macro,f1_macro,auc_macro,kappa,mcc,rounds_to_best,train_min,comm_MB
+proposed,FediGAN-ViT (FedProx + cGAN + ViT),3,92.45 ± 0.61,92.47 ± 0.65,92.47 ± 0.61,92.47 ± 0.65,92.44 ± 0.61,98.95 ± 0.08,0.899 ± 0.008,0.900 ± 0.008,13.7 ± 2.3,5.9,7800
+fedavg_gan,FedAvg + cGAN + ViT,1,91.81,91.86,91.79,91.86,91.77,98.98,0.891,0.891,15.0,5.0,7800
+fedprox_none,FedProx + ViT (no augmentation),3,91.00 ± 0.79,90.99 ± 0.76,91.14 ± 0.83,90.99 ± 0.76,90.99 ± 0.82,98.68 ± 0.29,0.880 ± 0.010,0.880 ± 0.010,11.3 ± 5.5,4.2,6760
+fedprox_oversample,FedProx + ViT + random oversampling (same counts as cGAN),3,92.33 ± 0.35,92.33 ± 0.39,92.44 ± 0.31,92.33 ± 0.39,92.32 ± 0.31,99.00 ± 0.09,0.898 ± 0.005,0.898 ± 0.005,11.7 ± 1.2,5.8,7800
+local_gan,"Local-only ViT + cGAN (no collaboration, mean of clients)",3,82.52 ± 2.48,82.60 ± 2.47,85.14 ± 1.06,82.60 ± 2.47,82.31 ± 2.66,96.43 ± 0.35,0.767 ± 0.033,0.777 ± 0.027,6.7 ± 1.2,4.6,0
+central_none,"Centralised ViT (pooled data, upper bound)",3,93.55 ± 0.17,93.59 ± 0.16,93.58 ± 0.13,93.59 ± 0.16,93.54 ± 0.19,98.93 ± 0.08,0.914 ± 0.002,0.914 ± 0.002,14.3 ± 0.6,3.9,0
+fedprox_gan_resnet50,FedProx + cGAN + ResNet-50,1,88.85,88.83,88.73,88.83,88.76,97.83,0.851,0.851,15.0,5.1,8466

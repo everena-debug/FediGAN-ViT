@@ -1,0 +1,9 @@
+{
+ "exact_duplicates": "MD5 of file bytes; all copies of a duplicate set with conflicting labels are removed",
+ "perceptual_hash": "dHash, 9x8 greyscale thumbnail of the 224x224 image, 64 bits",
+ "near_duplicate_rule": "identical hash (Hamming distance 0), linked only for hash sets of 2-5 images",
+ "patient_rule": "file name <id>_left/<id>_right; ids separated by file extension (.jpg vs .jpeg)",
+ "grouping": "union-find over patient and hash links, before any splitting",
+ "split": "StratifiedGroupKFold, test 0.15, val 0.15, seed 42",
+ "partition": "group-level Dirichlet alpha=0.5, 3 clients, each >= 10% of training data"
+}

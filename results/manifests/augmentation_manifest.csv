@@ -1,0 +1,13 @@
+client,cls,real,synthetic,total,synthetic_noise_seed
+0,Cataract,584,0,584,"10*seed + client (seeds 42, 43, 44)"
+0,DR,106,100,206,"10*seed + client (seeds 42, 43, 44)"
+0,Glaucoma,53,100,153,"10*seed + client (seeds 42, 43, 44)"
+0,Normal,519,65,584,"10*seed + client (seeds 42, 43, 44)"
+1,Cataract,116,100,216,"10*seed + client (seeds 42, 43, 44)"
+1,DR,690,0,690,"10*seed + client (seeds 42, 43, 44)"
+1,Glaucoma,398,100,498,"10*seed + client (seeds 42, 43, 44)"
+1,Normal,219,100,319,"10*seed + client (seeds 42, 43, 44)"
+2,Cataract,50,100,150,"10*seed + client (seeds 42, 43, 44)"
+2,DR,18,100,118,"10*seed + client (seeds 42, 43, 44)"
+2,Glaucoma,263,0,263,"10*seed + client (seeds 42, 43, 44)"
+2,Normal,53,100,153,"10*seed + client (seeds 42, 43, 44)"
